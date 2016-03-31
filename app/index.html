@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="" manifest="index.manifest" >
+
+<head>
+    <meta charset="utf-8" >
+    <meta name="description" content="">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <title>nodeapp</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="row">
+                <div class="form-group has-success col-sm-6">
+                    <label class="col-sm-2 control-label" for="startnum">开始数字：</label>
+                    <div class="col-sm-10">
+                        <input id="startnum" type="number" class="form-control" value="1">
+                    </div>
+                </div>
+                <div class="form-group has-success  col-sm-6">
+                    <label class="col-sm-2 control-label" for="chushu">除数: </label>
+                    <div class="col-sm-10">
+                        <input id="chushu" type="number" class="form-control" value="3">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="control-group  col-sm-6">
+                    <label class="col-xs-6 control-label" for="isguo">是否显示过数字：</label>
+                    <!-- <div class="col-xs-6"> -->
+                        <input id="isguo" class="col-xs-6" type="checkbox" checked data-on-text="是" data-off-text="否" />
+                    <!-- </div> -->
+                    <!-- <div class="col-xs-9 switch">
+                    <input id="isguo" type="checkbox" checked data-on-text="是" data-off-text="否" />
+                </div> -->
+                </div>
+                <div class="control-group  col-sm-6">
+                    <button id="calc" type="button" class="btn btn-primary btn-block">开始计算</button>
+                </div>
+            </div>
+        </form>
+        <div id="output-wrap">
+            <div class="output-scroll" id='output-scroll'>
+                
+            <div class="cell_num">1</div><div class="cell_num">2</div><div class="cell_num cell_num_guo">3</div><div class="cell_num">4</div><div class="cell_num">5</div><div class="cell_num cell_num_guo">6</div><div class="cell_num">7</div><div class="cell_num">8</div><div class="cell_num cell_num_guo">9</div><div class="cell_num">10</div><div class="cell_num">11</div><div class="cell_num cell_num_guo">12</div><div class="cell_num cell_num_guo">13</div><div class="cell_num">14</div><div class="cell_num cell_num_guo">15</div><div class="cell_num">16</div><div class="cell_num">17</div><div class="cell_num cell_num_guo">18</div><div class="cell_num">19</div><div class="cell_num">20</div><div class="cell_num cell_num_guo">21</div><div class="cell_num">22</div><div class="cell_num cell_num_guo">23</div><div class="cell_num cell_num_guo">24</div><div class="cell_num">25</div><div class="cell_num">26</div><div class="cell_num cell_num_guo">27</div><div class="cell_num">28</div><div class="cell_num">29</div><div class="cell_num cell_num_guo">30</div><div class="cell_num cell_num_guo">31</div><div class="cell_num cell_num_guo">32</div><div class="cell_num cell_num_guo">33</div><div class="cell_num cell_num_guo">34</div><div class="cell_num cell_num_guo">35</div><div class="cell_num cell_num_guo">36</div><div class="cell_num cell_num_guo">37</div><div class="cell_num cell_num_guo">38</div><div class="cell_num cell_num_guo">39</div><div class="cell_num">40</div><div class="cell_num">41</div><div class="cell_num cell_num_guo">42</div><div class="cell_num cell_num_guo">43</div><div class="cell_num">44</div><div class="cell_num cell_num_guo">45</div><div class="cell_num">46</div><div class="cell_num">47</div><div class="cell_num cell_num_guo">48</div><div class="cell_num">49</div><div class="cell_num">50</div><div class="cell_num cell_num_guo">51</div><div class="cell_num">52</div><div class="cell_num cell_num_guo">53</div><div class="cell_num cell_num_guo">54</div><div class="cell_num">55</div><div class="cell_num">56</div><div class="cell_num cell_num_guo">57</div><div class="cell_num">58</div><div class="cell_num">59</div><div class="cell_num cell_num_guo">60</div><div class="cell_num">61</div><div class="cell_num">62</div><div class="cell_num cell_num_guo">63</div><div class="cell_num">64</div><div class="cell_num">65</div><div class="cell_num cell_num_guo">66</div><div class="cell_num">67</div><div class="cell_num">68</div><div class="cell_num cell_num_guo">69</div><div class="cell_num">70</div><div class="cell_num">71</div><div class="cell_num cell_num_guo">72</div><div class="cell_num cell_num_guo">73</div><div class="cell_num">74</div><div class="cell_num cell_num_guo">75</div><div class="cell_num">76</div><div class="cell_num">77</div><div class="cell_num cell_num_guo">78</div><div class="cell_num">79</div><div class="cell_num">80</div><div class="cell_num cell_num_guo">81</div><div class="cell_num">82</div><div class="cell_num cell_num_guo">83</div><div class="cell_num cell_num_guo">84</div><div class="cell_num">85</div><div class="cell_num">86</div><div class="cell_num cell_num_guo">87</div><div class="cell_num">88</div><div class="cell_num">89</div><div class="cell_num cell_num_guo">90</div><div class="cell_num">91</div><div class="cell_num">92</div><div class="cell_num cell_num_guo">93</div><div class="cell_num">94</div><div class="cell_num">95</div><div class="cell_num cell_num_guo">96</div><div class="cell_num">97</div><div class="cell_num">98</div><div class="cell_num cell_num_guo">99</div><div class="cell_num">100</div></div>
+            
+        </div>
+    </div>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
